@@ -1,10 +1,10 @@
 package Application;
 
-import board_game.Position;
+import tabuleiro_jogo.Tabuleiro;
 
 public class Program {
     public static void main(String[] args) {
-        Position pos = new Position(5 , 2);
-        System.out.println(pos);
+        Tabuleiro tabuleiro = new Tabuleiro(8,8);
+        
     }
 }
