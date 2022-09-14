@@ -1,7 +1,10 @@
 package Application;
 
+import tabuleiro_jogo.Tabuleiro;
+
 public class Program {
     public static void main(String[] args) {
-        System.out.println("FUNCIONANDO");
+        Tabuleiro tabuleiro = new Tabuleiro(8,8);
+        
     }
 }
