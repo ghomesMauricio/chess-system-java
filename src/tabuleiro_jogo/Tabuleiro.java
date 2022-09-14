@@ -3,12 +3,12 @@ package tabuleiro_jogo;
 public class Tabuleiro {
     private int coluna;
     private int fileira;
-    private Peca [][] pecas;
+    private Peca [][] peca;
 
     public Tabuleiro(int coluna, int fileira){
         this.coluna = coluna;
         this.fileira = fileira;
-        pecas = new Peca[fileira][coluna];
+        peca = new Peca[fileira][coluna];
     }
 
     public int getFileira() {
@@ -25,5 +25,9 @@ public class Tabuleiro {
 
     public void setColuna(int coluna) {
         this.coluna = coluna;
+    }
+
+    public Peca peca (int fileira, int coluna){
+        return peca[fileira][coluna];
     }
 }
