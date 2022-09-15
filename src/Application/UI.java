@@ -1,6 +1,5 @@
 package Application;
 
-import Xadrez.Partida_xadrez;
 import Xadrez.Pecas_xadrez;
 
 public class UI {
@@ -12,7 +11,7 @@ public class UI {
             }
             System.out.println();
         }
-        System.out.println( "A B C D E F G H");
+        System.out.println( "  A B C D E F G H");
     }
     public static void printPeca(Pecas_xadrez Peca){
         if (Peca == null){
