@@ -20,9 +20,12 @@ public class Partida_xadrez {
         }
         return mat;
     }
+    private void coordenadasXadrez (char coluna, int fileira, Pecas_xadrez peca){
+        tabuleiro.Espaco_peca(peca,new PosicaoXadrez(coluna, fileira).toPosition());
+    }
     private void IniciandoPartida(){
-        tabuleiro.Espaco_peca(new Torre(tabuleiro,Cor.BRANCO),new Posicao(0,0));
-        tabuleiro.Espaco_peca(new Torre(tabuleiro,Cor.BRANCO),new Posicao(0,0));
+        coordenadasXadrez('b', 6, new Torre(tabuleiro,Cor.BRANCO));
+        tabuleiro.Espaco_peca(new Torre(tabuleiro,Cor.BRANCO),new Posicao(0,7));
         tabuleiro.Espaco_peca(new Rei(tabuleiro,Cor.PRETO),new Posicao(0,4));
     }
 
