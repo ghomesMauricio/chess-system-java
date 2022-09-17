@@ -11,6 +11,6 @@ public class Torre extends Pecas_xadrez {
 
     @Override
     public String toString() {
-        return "♜";
+        return ("T");
     }
 }

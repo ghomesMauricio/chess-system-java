@@ -11,6 +11,6 @@ public class Rei extends Pecas_xadrez {
 
     @Override
     public String toString() {
-        return ("\uD83D\uDC51");
+        return ("R");
     }
 }
